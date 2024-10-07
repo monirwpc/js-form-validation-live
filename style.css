@@ -1,0 +1,38 @@
+.container {
+	width: 800px;
+	margin: 0 auto;
+	font-size: 20px;
+}
+h2 {
+	text-align: center;
+}
+.form-validation form input {
+	width: 270px;
+	height: 20px;
+	font-size: 16px;
+	padding: 5px 10px;
+}
+.democlass {
+	background: url('images/f1.png');
+}
+table tr td:first-child {
+	vertical-align: initial;
+}
+.relative {
+	position: relative;
+}
+.form-validation form .err-mess {
+	color: red;
+	font-size: 15px;
+    font-weight: normal;
+    text-transform: lowercase;
+    font-family: cursive;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 10px;
+    top:55%;
+}
+.form-validation form input:focus {
+	border:2px solid blue;
+}

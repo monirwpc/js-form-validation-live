@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js form validation</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="form-validation">
+			<h2>Javascript Form Validation</h2>
+				<form action="" name="frm" onsubmit="return frmValidation()">
+				<table>
+					<tr>
+						<td>Enter Your Name :</td> 
+						<td class="relative">
+							<input type="text" name="name" placeholder="Enter name" id="name-txt" onkeyup="name_valid()" autocomplete="off">
+							<span class="err-mess" id="name-mess"></span><br><br>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Enter Your Age :</td>
+						<td class="relative">
+							<input type="text" name="age" placeholder="Enter age" id="age-txt" onkeyup="age_valid()" autocomplete="off">
+							<span class="err-mess" id="age-mess"></span><br><br>
+						</td>
+					</tr>
+					 
+					 <tr>
+					 	<td>Enter Your Email :</td>
+					 	<td class="relative">
+					 		<input type="text" name="email" placeholder="Enter email" onkeyup="email_valid()" autocomplete="off">
+							<span class="err-mess" id="email-mess"></span><br><br>
+						</td>
+					 </tr>
+
+					 <tr>
+					 	<td>Enter Your Phone :</td>
+					 	<td class="relative">
+					 		<input type="text" name="phone" placeholder="Enter Phone No" onkeyup="phone_valid()" autocomplete="off">
+							<span class="err-mess" id="phone-mess"></span><br><br>
+						</td>
+					 </tr>
+
+					 <tr>
+					 	<td>Enter Your Password :</td>
+					 	<td class="relative">
+					 		<input type="password" name="pass" placeholder="Enter password" onkeyup="pass_valid()">
+							<span class="err-mess" id="pass-mess"></span><br><br>
+						</td>
+					 </tr>
+
+					 <tr>
+					 	<td>Enter Your RePass :</td>
+					 	<td class="relative"> 
+					 		<input type="password" name="repass" placeholder="Enter confirm password" id="repass-bg" onkeyup="repass_valid()">
+							<span class="err-mess" id="repass-mess"></span><br><br>
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td><button type="submit">Submit Form</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	<script src="custom.js"></script>
+</body>
+</html>
